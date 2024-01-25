@@ -291,7 +291,7 @@
 
             {
                 "questionId":"xss.q3",
-                "language":"javascript",
+                "language":"html",
                 "lineToHighlight":7,
                 "question":"Of the two code samples shown below, which one PREVENT XSS injections via HTML encoding?",
                 "snippets":[
