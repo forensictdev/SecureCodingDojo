@@ -299,8 +299,8 @@
                     "snipXSS12.js"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right! The code sample is passing the input to 'setTimeout' as a separate argument",
-                "incorrectReasoning": "Incorrect! The code sample is concatenating the input into the JavaScript statement resulting in XSS."
+                "correctReasoning":"You're right! The code sample is using a function to scape special characters in HTML",
+                "incorrectReasoning": "Incorrect! The code sample does not escape special characters and creates a XSS vuln."
             },
             
             {
