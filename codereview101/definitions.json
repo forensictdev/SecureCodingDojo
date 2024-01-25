@@ -295,8 +295,8 @@
                 "lineToHighlight":7,
                 "question":"Of the two code samples shown below, which one PREVENT XSS injections via HTML encoding?",
                 "snippets":[
-                    "snipXSS11.js",
-                    "snipXSS12.js"
+                    "snipXSS11.jsp",
+                    "snipXSS12.jsp"
                 ],
                 "answer":1,
                 "correctReasoning":"You're right! The code sample is using a function to scape special characters in HTML",
