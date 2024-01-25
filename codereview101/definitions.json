@@ -288,20 +288,6 @@
                 "correctReasoning":"You're right! The code sample is neutralizing the single quote as well.",
                 "incorrectReasoning": "Incorrect! The encoding misses the single quote which allows XSS with a payload like: '+alert(1)+'."
             },
-
-            {
-                "questionId":"xss.q3",
-                "language":"html",
-                "lineToHighlight":7,
-                "question":"Of the two code samples shown below, which one PREVENT XSS injections via HTML encoding?",
-                "snippets":[
-                    "snipXSS11.jsp",
-                    "snipXSS12.jsp"
-                ],
-                "answer":1,
-                "correctReasoning":"You're right! The code sample is using a function to scape special characters in HTML",
-                "incorrectReasoning": "Incorrect! The code sample does not escape special characters and creates a XSS vuln."
-            },
             
             {
                 "questionId":"xss.q4",
