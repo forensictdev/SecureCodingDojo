@@ -292,6 +292,20 @@
             {
                 "questionId":"xss.q3",
                 "language":"javascript",
+                "lineToHighlight":7,
+                "question":"Of the two code samples shown below, which one PREVENT XSS injections via HTML encoding?",
+                "snippets":[
+                    "snipXSS11.js",
+                    "snipXSS12.js"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is passing the input to 'setTimeout' as a separate argument",
+                "incorrectReasoning": "Incorrect! The code sample is concatenating the input into the JavaScript statement resulting in XSS."
+            },
+            
+            {
+                "questionId":"xss.q4",
+                "language":"javascript",
                 "lineToHighlight":8,
                 "question":"In this case the application is implementing its own client side rendering of the input instead of taking advantage of a JS framework. Can you tell which snippet is safer?",
                 "snippets":[
@@ -303,33 +317,6 @@
                 "incorrectReasoning": "Incorrect! The code sample is updating the element html which will allow XSS with a payload like: <img src=x onerror=alert(1)>."
             },
 
-            {
-                "questionId":"xss.q4",
-                "language":"javascript",
-                "lineToHighlight":7,
-                "question":"The following example is showing the use of a JavaScript parameterized statement. Can you spot the snippet that leverages this best practice?",
-                "snippets":[
-                    "snipXSS7.js",
-                    "snipXSS8.js"
-                ],
-                "answer":1,
-                "correctReasoning":"You're right! The code sample is passing the input to 'setTimeout' as a separate argument",
-                "incorrectReasoning": "Incorrect! The code sample is concatenating the input into the JavaScript statement resulting in XSS."
-            },
-
-            {
-                "questionId": "xss.q5",
-                "language": "javascript",
-                "lineToHighlight": 5,
-                "question": "In the following React example, which of the code snippets prevents XSS?",
-                "snippets": [
-                    "snipXSS9.jsx",
-                    "snipXSS10.jsx"
-                ],
-                "answer": 1,
-                "correctReasoning": "You're right! React handles escaping text in its templates by default.",
-                "incorrectReasoning": "Incorrect! If we use `dangerouslySetInnerHTML`, we need to sanitize the output first."
-            }
         ]
 
     },
