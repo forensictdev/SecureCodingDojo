@@ -290,6 +290,20 @@
             },
             
             {
+                "questionId":"xss.q3",
+                "language":"html",
+                "lineToHighlight":7,
+                "question":"Of the two code samples shown below, which one PREVENT XSS injections via HTML encoding?",
+                "snippets":[
+                    "snipXSS11.jsp",
+                    "snipXSS12.jsp"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is using a function to scape special characters in HTML",
+                "incorrectReasoning": "Incorrect! The code sample does not escape special characters and creates a XSS vuln."
+            },
+            
+            {
                 "questionId":"xss.q4",
                 "language":"javascript",
                 "lineToHighlight":8,
@@ -301,7 +315,7 @@
                 "answer":0,
                 "correctReasoning":"You're right! The code sample is updating the element text.",
                 "incorrectReasoning": "Incorrect! The code sample is updating the element html which will allow XSS with a payload like: <img src=x onerror=alert(1)>."
-            },
+            }
 
         ]
 
