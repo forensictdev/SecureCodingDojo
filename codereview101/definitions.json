@@ -175,30 +175,17 @@
                 "incorrectReasoning": "Incorrect! The code sample uses a custom policy that sets up the correct permissions."
             },
             {
-                "questionId":"brokenAuthentication.q3",
+                "questionId":"securityMisconfiguration.q3",
                 "language":"java",
-                "lineToHighlight":4,
-                "question":"Which of the following code snippets is an insecure way to authenticate a user?",
+                "lineToHighlight":7,
+                "question":"Which of the following code snippets has a configuration error?",
                 "snippets":[
-                    "snipBrokenAuth5.java",
-                    "snipBrokenAuth6.java"
+                    "snipsecurityMisconfiguration5.java",
+                    "snipsecurityMisconfiguration6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right! The code sample uses plain text comparison of the user's stored password for comparison",
-                "incorrectReasoning": "Incorrect! The sample is actually comparing user's stored and hashed password against a hashed password of the input string!."
-            },
-            {
-                "questionId":"brokenAuthentication.q4",
-                "language":"java",
-                "lineToHighlight":4,
-                "question":"Which of the following code snippets uses a secure session token?",
-                "snippets":[
-                    "snipBrokenAuth7.java",
-                    "snipBrokenAuth8.java"
-                ],
-                "answer":1,
-                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
-                "incorrectReasoning": "Incorrect! The code sample uses some random info for the session but does not have any review of the expiration time ."
+                "correctReasoning":"You're right! The code sample has an error during the connection stablishment",
+                "incorrectReasoning": "Incorrect! The sample code makes a secure connection validating hostname and session."
             }
         ]
 
