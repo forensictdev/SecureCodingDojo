@@ -223,7 +223,7 @@
                 "incorrectReasoning": "Incorrect! The code sample uses a POST to send the user and password protected by TLS."
             },
             {
-                "questionId":"securityMisconfiguration.q3",
+                "questionId":"sensitiveDataExposure.q3",
                 "language":"java",
                 "lineToHighlight":7,
                 "question":"Which of the following code snippets exposes sensitive data of the user?",
