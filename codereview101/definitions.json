@@ -190,6 +190,54 @@
         ]
 
     },
+
+    {
+        "categoryId":"codereview101_sensitiveDataExposure",
+        "categoryName":"Sensitive Data Exposure",
+        "categoryDetails":"categorySensitiveDataExposure.md",
+        "questions":[
+            {
+                "questionId":"sensitiveDataExposure.q1",
+                "language":"java",
+                "lineToHighlight":4,
+                "question":"Which of the following code snippets exposes sensitive data of the user?",
+                "snippets":[
+                    "snipSensitiveDataExposure1.java",
+                    "snipSensitiveDataExposure2.java"
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample exposes the credit card number of a user",
+                "incorrectReasoning": "Incorrect! The code sample masquerades the credit card number!"
+            },
+            {
+                "questionId":"sensitiveDataExposure.q2",
+                "language":"java",
+                "lineToHighlight":6,
+                "question":"Which of the following code snippets exposes sensitive data of the user?",
+                "snippets":[
+                    "snipSensitiveDataExposure3.java"",
+                    "snipSensitiveDataExposure4.java""
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample exposes the user and password in the URL!",
+                "incorrectReasoning": "Incorrect! The code sample uses a POST to send the user and password protected by TLS."
+            },
+            {
+                "questionId":"securityMisconfiguration.q3",
+                "language":"java",
+                "lineToHighlight":7,
+                "question":"Which of the following code snippets exposes sensitive data of the user?",
+                "snippets":[
+                    "snipSensitiveDataExposure5.java"",
+                    "snipSensitiveDataExposure6.java""
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample has a hardcoded user and password for the DB!",
+                "incorrectReasoning": "Incorrect! The sample code loads the sensitive information from environment variables!."
+            }
+        ]
+
+    },
     
     {
         "categoryId":"codereview101_memory",
