@@ -146,33 +146,33 @@
      {
         "categoryId":"codereview101_securityMisconfiguration",
         "categoryName":"Security Misconfiguration",
-        "categoryDetails":"categorysecurityMisconfiguration.md",
+        "categoryDetails":"categorySecurityMisconfiguration.md",
         "questions":[
             {
                 "questionId":"securityMisconfiguration.q1",
-                "language":"java",
+                "language":"xml",
                 "lineToHighlight":9,
                 "question":"Which of the following code snippets has a wrong configuration?",
                 "snippets":[
                     "snipSecurityMisconfiguration1.xml",
                     "snipSecurityMisconfiguration2.xml"
                 ],
-                "answer":1,
-                "correctReasoning":"You're right! The code sample is the right way to authenticate the user password in a code.",
-                "incorrectReasoning": "Incorrect! The sample is using a plain text password for comparison, which is insecure!."
+                "answer":0,
+                "correctReasoning":"You're right! The code sample has an error to handle the access to the protected resource",
+                "incorrectReasoning": "Incorrect! The code sample is handling correctly the access to the protected resource."
             },
             {
-                "questionId":"brokenAuthentication.q2",
+                "questionId":"securityMisconfiguration.q2",
                 "language":"java",
                 "lineToHighlight":4,
-                "question":"Which of the following code snippets creates a secure session token?",
+                "question":"Which of the following code snippets has a configuration error?",
                 "snippets":[
-                    "snipBrokenAuth3.java",
-                    "snipBrokenAuth4.java"
+                    "snipSecurityMisconfiguration3.java",
+                    "snipSecurityMisconfiguration4.java"
                 ],
-                "answer":1,
-                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
-                "incorrectReasoning": "Incorrect! The code sample uses the username as part of the session token without any other random info!."
+                "answer":0,
+                "correctReasoning":"You're right! The code sample loads a policy with all the permissions",
+                "incorrectReasoning": "Incorrect! The code sample uses a custom policy that sets up the correct permissions."
             },
             {
                 "questionId":"brokenAuthentication.q3",
