@@ -180,8 +180,8 @@
                 "lineToHighlight":7,
                 "question":"Which of the following code snippets has a configuration error?",
                 "snippets":[
-                    "snipsecurityMisconfiguration5.java",
-                    "snipsecurityMisconfiguration6.java"
+                    "snipSecurityMisconfiguration5.java",
+                    "snipSecurityMisconfiguration6.java"
                 ],
                 "answer":1,
                 "correctReasoning":"You're right! The code sample has an error during the connection stablishment",
