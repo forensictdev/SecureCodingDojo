@@ -215,8 +215,8 @@
                 "lineToHighlight":6,
                 "question":"Which of the following code snippets exposes sensitive data of the user?",
                 "snippets":[
-                    "snipSensitiveDataExposure3.java"",
-                    "snipSensitiveDataExposure4.java""
+                    "snipSensitiveDataExposure3.java",
+                    "snipSensitiveDataExposure4.java"
                 ],
                 "answer":0,
                 "correctReasoning":"You're right! The code sample exposes the user and password in the URL!",
@@ -228,8 +228,8 @@
                 "lineToHighlight":7,
                 "question":"Which of the following code snippets exposes sensitive data of the user?",
                 "snippets":[
-                    "snipSensitiveDataExposure5.java"",
-                    "snipSensitiveDataExposure6.java""
+                    "snipSensitiveDataExposure5.java",
+                    "snipSensitiveDataExposure6.java"
                 ],
                 "answer":1,
                 "correctReasoning":"You're right! The code sample has a hardcoded user and password for the DB!",
