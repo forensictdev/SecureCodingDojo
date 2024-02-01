@@ -238,6 +238,54 @@
         ]
 
     },
+
+    {
+        "categoryId":"codereview101_csrf",
+        "categoryName":"Cross Site Request Forgery",
+        "categoryDetails":"categoryCSRF.md",
+        "questions":[
+            {
+                "questionId":"csrf.q1",
+                "language":"java",
+                "lineToHighlight":7,
+                "question":"Which of the following code snippets PREVENTS a CSRF vulnerability?",
+                "snippets":[
+                    "snipCSRF1.java",
+                    "snipCSRF2.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample uses a token to prevent a CSRF vuln!",
+                "incorrectReasoning": "Incorrect! The code sample does not use any measure to prevent a CSRF!"
+            },
+            {
+                "questionId":"csrf.q2",
+                "language":"html",
+                "lineToHighlight":2,
+                "question":"Which of the following code snippets is vulnerable to CSRF?",
+                "snippets":[
+                    "snipCSRF3.html",
+                    "snipCSRF4.html"
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample does not use a measure to prevent the vulnerability.",
+                "incorrectReasoning": "Incorrect! The code sample uses a csrf token to prevent the vulnerability."
+            },
+            {
+                "questionId":"csrf.q3",
+                "language":"java",
+                "lineToHighlight":9,
+                "question":"Which of the following code snippets PREVENTS a CSRF vulnerability?",
+                "snippets":[
+                    "snipCSRF5.java",
+                    "snipCSRF6.java"
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample has a CSRF token that prevents the vulnerability!",
+                "incorrectReasoning": "Incorrect! The sample code does not prevent the vulnerability!."
+            }
+        ]
+
+    },
     
     {
         "categoryId":"codereview101_memory",
