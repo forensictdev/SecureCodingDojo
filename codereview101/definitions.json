@@ -473,29 +473,43 @@
             {
                 "questionId":"indirectReferences.q1",
                 "language":"java",
-                "lineToHighlight":3,
-                "question":"Which of the following code snippets prevents Path Traversal?",
+                "lineToHighlight":7,
+                "question":"Which of the following code snippets prevents Open Redirect?",
                 "snippets":[
-                    "snipIndirectReferences1.java",
-                    "snipIndirectReferences2.java"
+                    "snipIndirectReferences5.java",
+                    "snipIndirectReferences6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right! The code sample is preventing a path traversal by referencing the file name by id.",
-                "incorrectReasoning": "Incorrect! The code is referencing the file path directly allowing a traversal attack."
+                "correctReasoning":"You're right! The code sample is preventing arbitrary redirects using validation of the user id",
+                "incorrectReasoning": "Incorrect! The code is referencing the URL directly allowing a Open Redirect spoofing attack."
             },
 
             {
                 "questionId":"indirectReferences.q2",
                 "language":"java",
-                "lineToHighlight":2,
+                "lineToHighlight":7,
                 "question":"Which of the following code snippets prevents Open Redirect?",
                 "snippets":[
-                    "snipIndirectReferences3.java",
-                    "snipIndirectReferences4.java"
+                    "snipIndirectReferences7.java",
+                    "snipIndirectReferences8.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right! The code sample is preventing arbitrary redirects by referencing the id of the authentication provider.",
-                "incorrectReasoning": "Incorrect! The code is referencing the URL directly allowing a Open Redirect spoofing attack."
+                "correctReasoning":"You're right! The code sample is preventing arbitrary redirects.",
+                "incorrectReasoning": "Incorrect! The code is referencing the URL using an input manipulated by the user"
+            },
+
+            {
+                "questionId":"indirectReferences.q3",
+                "language":"java",
+                "lineToHighlight":6,
+                "question":"Which of the following code snippets is vulnerable to an Open Redirect?",
+                "snippets":[
+                    "snipIndirectReferences9.java",
+                    "snipIndirectReferences10.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is preventing does not make any kind of prevention of the vulnerability.",
+                "incorrectReasoning": "Incorrect! The code is using a function that validates the URL previous to the redirection!"
             }
         ]
 
