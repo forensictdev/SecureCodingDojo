@@ -1,0 +1,3 @@
+Cryptography is the science in charge of providing security and protection to information. This is used in everything we consume and use in our digital daily life, opening an email, connecting to a WiFi network, entering a website, etc.
+
+Storage cryptography is a fundamental discipline in information security. It focuses on protecting sensitive data when it is stored on physical devices or in virtual environments. The importance of this practice lies in the increasing amount of sensitive data that is stored on servers, hard drives, clouds and other media. To guarantee the confidentiality, integrity and authenticity of this data, various cryptographic techniques are applied. Next, we'll explore essential security practices in storage cryptography.
