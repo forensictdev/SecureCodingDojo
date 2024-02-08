@@ -513,6 +513,56 @@
             }
         ]
 
+    },
+
+    {
+        "categoryId":"codereview101_cryptography",
+        "categoryName":"Cryptography",
+        "categoryDetails":"categoryCryptography.md",
+        "questions":[
+            {
+                "questionId":"crypto.q1",
+                "language":"java",
+                "lineToHighlight":6,
+                "question":"Which of the following code snippets is the right way to store a password?",
+                "snippets":[
+                    "snipCrypto1.java",
+                    "snipCrypto2.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample uses a hash to store the password",
+                "incorrectReasoning": "Incorrect! The code is using plain text for the password."
+            },
+
+            {
+                "questionId":"crypto.q2",
+                "language":"java",
+                "lineToHighlight":7,
+                "question":"Which of the following code snippets prevents correctly storing a credit card number?",
+                "snippets":[
+                    "snipCrypto3.java",
+                    "snipCrypto4.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample uses symmetric encryption to store the CC number ",
+                "incorrectReasoning": "Incorrect! The code is using plain text!"
+            },
+
+            {
+                "questionId":"crypto.q3",
+                "language":"java",
+                "lineToHighlight":8,
+                "question":"Which of the following code snippets is better to store a password?",
+                "snippets":[
+                    "snipCrypto5.java",
+                    "snipCrypto6.java"
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample uses the concept of salting, hashing, and stretching to store a password",
+                "incorrectReasoning": "Incorrect! The code is using just a hash which is easier to crack!"
+            }
+        ]
+
     }
 
 ]
