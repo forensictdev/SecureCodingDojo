@@ -538,7 +538,7 @@
                 "questionId":"crypto.q2",
                 "language":"java",
                 "lineToHighlight":7,
-                "question":"Which of the following code snippets prevents correctly storing a credit card number?",
+                "question":"Which of the following code snippets correctly stores a credit card number?",
                 "snippets":[
                     "snipCrypto3.java",
                     "snipCrypto4.java"
