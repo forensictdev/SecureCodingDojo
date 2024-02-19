@@ -5,45 +5,80 @@
         "challenges":[
             {
                 "id":"codereview101_inputValidation",
-                "name":"Input Validation", 
+                "name":"Input Validation",
                 "playLink":"#codereview101_inputValidation",
                 "description": "inputValidation.md",
                 "codeBlockIds":["inputAllowListing"]
             },
             {
                 "id":"codereview101_paramStatements",
-                "name":"Parameterized Statements", 
+                "name":"Parameterized Statements",
                 "description": "paramStatements.md",
                 "playLink":"#codereview101_paramStatements",
                 "codeBlockIds":["parameterizedCommands"]
             },
             {
+                "id":"codereview101_brokenAuthentication",
+                "name":"Broken Authentication and Session management",
+                "description": "brokenAuthentication.md",
+                "playLink":"#codereview101_brokenAuthentication",
+                "codeBlockIds":[""]
+            },
+            {
+                "id":"codereview101_securityMisconfiguration",
+                "name":"Security Misconfiguration",
+                "description": "securityMisconfiguration.md",
+                "playLink":"#codereview101_securityMisconfiguration",
+                "codeBlockIds":[""]
+            },
+            {
+                "id":"codereview101_sensitiveDataExposure",
+                "name":"Sensitive Data Exposure",
+                "description": "sensitiveDataExposure.md",
+                "playLink":"#codereview101_sensitiveDataExposure",
+                "codeBlockIds":[""]
+            },
+            {
+                "id":"codereview101_csrf",
+                "name":"Cross Site Request Forgery",
+                "description": "CSRF.md",
+                "playLink":"#codereview101_csrf",
+                "codeBlockIds":[""]
+            },
+            {
                 "id":"codereview101_memory",
-                "name":"Memory Best Practices", 
+                "name":"Memory Best Practices",
                 "description": "memory.md",
                 "playLink":"#codereview101_memory",
                 "codeBlockIds":["safeMemoryManagement"]
             },
             {
                 "id":"codereview101_data",
-                "name":"Protecting Data", 
+                "name":"Protecting Data",
                 "description": "data.md",
                 "playLink":"#codereview101_data",
                 "codeBlockIds":["useStrongDataEncryption"]
             },
             {
                 "id":"codereview101_xss",
-                "name":"Preventing Cross-Site Scripting", 
+                "name":"Preventing Cross-Site Scripting",
                 "description": "xss.md",
                 "playLink":"#codereview101_xss",
                 "codeBlockIds":["neutralizeOutput"]
             },
             {
                 "id":"codereview101_indirectReferences",
-                "name":"Indirect Object References", 
+                "name":"Indirect Object References",
                 "description": "indirectReferences.md",
                 "playLink":"#codereview101_indirectReferences",
                 "codeBlockIds":["indirectObjectReferences"]
+            },
+            {
+                "id":"codereview101_cryptography",
+                "name":"Cryptography",
+                "description": "Cryptography.md",
+                "playLink":"#codereview101_cryptography",
+                "codeBlockIds":["Cryptography"]
             }
         ]
     }
