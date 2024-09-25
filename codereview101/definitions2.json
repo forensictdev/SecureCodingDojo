@@ -14,8 +14,8 @@
                     "snipInputValidation2.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using input allow listing.",
+                "incorrectReasoning": "Incorrect! While there is some validation, it is based on block listing and will still allow command injection (ex. `rm -rf /`)."
             }
         ]
 
@@ -36,8 +36,8 @@
                     "snipParamStatements6.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow the execution of the malicious string.",
+                "incorrectReasoning": "Incorrect! The sample is concatenating the input to the SQL Statement which executes a malicious string"
             },
             {
                 "questionId":"paramStatements.q2",
@@ -49,8 +49,8 @@
                     "snipParamStatements8.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample allows an OS Command Injection because it executes the string directly in the OS which can be dangerous!.",
+                "incorrectReasoning": "Incorrect! The code sample uses correctly a function (ProcessBuilder) to limit the input string of the user at the execution level."
             },
             {
                 "questionId":"paramStatements.q3",
@@ -62,8 +62,8 @@
                     "snipParamStatements10.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample uses correctly a function to prevent an OS COMMAND INJECTION at the execution level.",
+                "incorrectReasoning": "Incorrect! The sample is actually concatenating the input to command at the execution level and can be dangerous."
             },
             {
                 "questionId":"paramStatements.q4",
@@ -75,8 +75,8 @@
                     "snipParamStatements12.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow the execution of the malicious string.",
+                "incorrectReasoning": "Incorrect! The sample is concatenating the input to the SQL Statement which executes a malicious string."
             }
         ]
 
@@ -97,8 +97,8 @@
                     "snipBrokenAuth2.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is the right way to authenticate the user password in a code.",
+                "incorrectReasoning": "Incorrect! The sample is using a plain text password for comparison, which is insecure!."
             },
             {
                 "questionId":"brokenAuthentication.q2",
@@ -110,8 +110,8 @@
                     "snipBrokenAuth4.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
+                "incorrectReasoning": "Incorrect! The code sample uses the username as part of the session token without any other random info!."
             },
             {
                 "questionId":"brokenAuthentication.q3",
@@ -123,8 +123,8 @@
                     "snipBrokenAuth6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample uses plain text comparison of the user's stored password for comparison",
+                "incorrectReasoning": "Incorrect! The sample is actually comparing user's stored and hashed password against a hashed password of the input string!."
             },
             {
                 "questionId":"brokenAuthentication.q4",
@@ -136,8 +136,8 @@
                     "snipBrokenAuth8.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
+                "incorrectReasoning": "Incorrect! The code sample uses some random info for the session but does not have any review of the expiration time ."
             }
         ]
 
@@ -158,8 +158,8 @@
                     "snipSecurityMisconfiguration2.xml"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample has an error to handle the access to the protected resource",
+                "incorrectReasoning": "Incorrect! The code sample is handling correctly the access to the protected resource."
             },
             {
                 "questionId":"securityMisconfiguration.q2",
@@ -171,8 +171,8 @@
                     "snipSecurityMisconfiguration4.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample loads a policy with all the permissions",
+                "incorrectReasoning": "Incorrect! The code sample uses a custom policy that sets up the correct permissions."
             },
             {
                 "questionId":"securityMisconfiguration.q3",
@@ -184,8 +184,8 @@
                     "snipSecurityMisconfiguration6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample has an error during the connection stablishment",
+                "incorrectReasoning": "Incorrect! The sample code makes a secure connection validating hostname and session."
             }
         ]
 
@@ -206,8 +206,8 @@
                     "snipSensitiveDataExposure2.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample exposes the credit card number of a user",
+                "incorrectReasoning": "Incorrect! The code sample masquerades the credit card number!"
             },
             {
                 "questionId":"sensitiveDataExposure.q2",
@@ -219,8 +219,8 @@
                     "snipSensitiveDataExposure4.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample exposes the user and password in the URL!",
+                "incorrectReasoning": "Incorrect! The code sample uses a POST to send the user and password protected by TLS."
             },
             {
                 "questionId":"sensitiveDataExposure.q3",
@@ -232,8 +232,8 @@
                     "snipSensitiveDataExposure6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample has a hardcoded user and password for the DB!",
+                "incorrectReasoning": "Incorrect! The sample code loads the sensitive information from environment variables!."
             }
         ]
 
@@ -254,8 +254,8 @@
                     "snipCSRF2.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample uses a token to prevent a CSRF vuln!",
+                "incorrectReasoning": "Incorrect! The code sample does not use any measure to prevent a CSRF!"
             },
             {
                 "questionId":"csrf.q2",
@@ -267,8 +267,8 @@
                     "snipCSRF4.html"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample does not use a measure to prevent the vulnerability.",
+                "incorrectReasoning": "Incorrect! The code sample uses a csrf token to prevent the vulnerability."
             },
             {
                 "questionId":"csrf.q3",
@@ -280,8 +280,8 @@
                     "snipCSRF6.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample has a CSRF token that prevents the vulnerability!",
+                "incorrectReasoning": "Incorrect! The sample code does not prevent the vulnerability!."
             }
         ]
 
@@ -302,8 +302,8 @@
                     "snipMemory2.cpp"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a function that controls the size of the input ('fgets').",
+                "incorrectReasoning": "Incorrect! The sample is using an insecure function: 'gets'. This function will overflow the buffer."
             },
 
             {
@@ -316,8 +316,8 @@
                     "snipMemory4.cpp"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using the BUFFER_SIZE constant to ensure the size of the buffer is allocated consistently.",
+                "incorrectReasoning": "Incorrect! The sample is using numeric values to allocate the size of the buffer. Notice that the buffer size is '5' but '9' characters can be read into the buffer."
             },
 
             {
@@ -330,8 +330,8 @@
                     "snipMemory6.cpp"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code is using '<' and will stop at the right time.",
+                "incorrectReasoning": "Incorrect! The sample is using '<=' which means one extra iteration resulting in off by one."
             },
 
             {
@@ -344,8 +344,8 @@
                     "snipMemory8.cpp"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code is not passing the input as a format argument.",
+                "incorrectReasoning": "Incorrect! The sample is actually passing the input as a format argument to 'printf'."
             }
         ]
 
@@ -366,8 +366,8 @@
                     "snipData2.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample indicates the password is hashed with PBKDF2 + a salt + iterations.",
+                "incorrectReasoning": "Incorrect! The code indicates that the password is compared to the value provided by the user, meaning the password is stored in the clear."
             },
 
             {
@@ -380,8 +380,8 @@
                     "snipData4.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code uses TLS 'https://' and sends data using POST, which doesn't store the parameters in web logs.",
+                "incorrectReasoning": "Incorrect! The code is sending a user name and a password via a 'http://' url and risks of storing the credentials in web logs."
             },
 
             {
@@ -394,8 +394,8 @@
                     "snipData6.js"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code removes the credit card number and also encrypts the data before storing.",
+                "incorrectReasoning": "Incorrect! The code is storing the transaction in clear text including the credit card number!"
             }
         ]
 
@@ -415,8 +415,8 @@
                     "snipXSS2.jsp"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is neutralizing HTML markup.",
+                "incorrectReasoning": "Incorrect! The code outputs the input 'as is', allowing '<script>' tags to be inserted in the page."
             },
 
             {
@@ -429,8 +429,8 @@
                     "snipXSS4.jsp"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is neutralizing the single quote as well.",
+                "incorrectReasoning": "Incorrect! The encoding misses the single quote which allows XSS with a payload like: '+alert(1)+'."
             },
             
             {
@@ -443,8 +443,8 @@
                     "snipXSS12.jsp"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is using a function to scape special characters in HTML",
+                "incorrectReasoning": "Incorrect! The code sample does not escape special characters and creates a XSS vuln."
             },
             
             {
@@ -457,8 +457,8 @@
                     "snipXSS6.js"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is updating the element text.",
+                "incorrectReasoning": "Incorrect! The code sample is updating the element html which will allow XSS with a payload like: <img src=x onerror=alert(1)>."
             }
 
         ]
@@ -480,8 +480,8 @@
                     "snipIndirectReferences6.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing arbitrary redirects using validation of the user id",
+                "incorrectReasoning": "Incorrect! The code is referencing the URL directly allowing a Open Redirect spoofing attack."
             },
 
             {
@@ -494,8 +494,8 @@
                     "snipIndirectReferences8.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample is preventing arbitrary redirects.",
+                "incorrectReasoning": "Incorrect! The code is referencing the URL using an input manipulated by the user"
             },
 
             {
@@ -507,9 +507,9 @@
                     "snipIndirectReferences9.java",
                     "snipIndirectReferences10.java"
                 ],
-                "answer":0,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is preventing does not make any kind of prevention of the vulnerability.",
+                "incorrectReasoning": "Incorrect! The code is using a function that validates the URL previous to the redirection!"
             }
         ]
 
@@ -530,8 +530,8 @@
                     "snipCrypto2.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample uses a hash to store the password",
+                "incorrectReasoning": "Incorrect! The code is using plain text for the password."
             },
 
             {
@@ -544,8 +544,8 @@
                     "snipCrypto4.java"
                 ],
                 "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "correctReasoning":"You're right! The code sample uses symmetric encryption to store the CC number ",
+                "incorrectReasoning": "Incorrect! The code is using plain text!"
             },
 
             {
@@ -557,9 +557,9 @@
                     "snipCrypto5.java",
                     "snipCrypto6.java"
                 ],
-                "answer":1,
-                "correctReasoning":"You're right!",
-                "incorrectReasoning": "Incorrect!"
+                "answer":0,
+                "correctReasoning":"You're right! The code sample uses the concept of salting, hashing, and stretching to store a password",
+                "incorrectReasoning": "Incorrect! The code is using just a hash which is easier to crack!"
             }
         ]
 
