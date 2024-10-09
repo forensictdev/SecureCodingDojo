@@ -13,7 +13,7 @@
                     "snipInputValidation1.java",
                     "snipInputValidation2.java"
                 ],
-                "answer":2,
+                "answer":[0,1],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             }
