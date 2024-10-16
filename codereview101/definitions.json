@@ -479,7 +479,7 @@
                     "snipIndirectReferences5.java",
                     "snipIndirectReferences6.java"
                 ],
-                "answer":1,
+                "answer":[1,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             },
@@ -493,7 +493,7 @@
                     "snipIndirectReferences7.java",
                     "snipIndirectReferences8.java"
                 ],
-                "answer":1,
+                "answer":[1,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             },
@@ -507,7 +507,7 @@
                     "snipIndirectReferences9.java",
                     "snipIndirectReferences10.java"
                 ],
-                "answer":0,
+                "answer":[0,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             }
@@ -529,7 +529,7 @@
                     "snipCrypto1.java",
                     "snipCrypto2.java"
                 ],
-                "answer":1,
+                "answer":[1,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             },
@@ -543,7 +543,7 @@
                     "snipCrypto3.java",
                     "snipCrypto4.java"
                 ],
-                "answer":1,
+                "answer":[1,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             },
@@ -557,7 +557,7 @@
                     "snipCrypto5.java",
                     "snipCrypto6.java"
                 ],
-                "answer":1,
+                "answer":[1,2],
                 "correctReasoning":"You're right!",
                 "incorrectReasoning": "Incorrect!"
             }
